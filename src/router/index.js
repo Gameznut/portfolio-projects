@@ -22,6 +22,14 @@ const router = createRouter({
         title: "Calculator",
       },
     },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import("@/views/PageNotFound.vue"),
+      meta: {
+        title: "Not Found",
+      },
+    },
   ],
 });
 
