@@ -176,6 +176,8 @@ export default {
   width: 100%;
   padding: 2rem;
   border-radius: 2rem;
+  box-shadow: rgba(30, 31, 31, 0.199) 0px 20px 25px -5px,
+    rgba(184, 8, 8, 0.04) 0px 10px 10px -5px;
 }
 .calculator label {
   font-weight: 700 !important;
