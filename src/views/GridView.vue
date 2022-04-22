@@ -61,7 +61,7 @@
               "
             >
               <div class="flex gap-[1rem] items-center">
-                <img src="../assets/images/image-daniel.jpg" alt="daniel" />
+                <img src="../assets/images/image-jonathan.jpg" alt="jonathan" />
                 <div>
                   <h1>Jonathan Walters</h1>
                   <small>Verified Graduate</small>
@@ -86,7 +86,7 @@
               "
             >
               <div class="flex gap-[1rem] items-center">
-                <img src="../assets/images/image-daniel.jpg" alt="daniel" />
+                <img src="../assets/images/image-kira.jpg" alt="kira" />
                 <div>
                   <h1>Kira Whittle</h1>
                   <small>Verified Graduate</small>
@@ -120,7 +120,7 @@
               "
             >
               <div class="flex gap-[1rem] items-center">
-                <img src="../assets/images/image-daniel.jpg" alt="daniel" />
+                <img src="../assets/images/image-jeanette.jpg" alt="jeanette" />
                 <div>
                   <h1>Jeanette Harmon</h1>
                   <small>Verified Graduate</small>
@@ -147,7 +147,7 @@
               "
             >
               <div class="flex gap-[1rem] items-center">
-                <img src="../assets/images/image-daniel.jpg" alt="daniel" />
+                <img src="../assets/images/image-kira.jpg" alt="kira" />
                 <div>
                   <h1>Kira Whittle</h1>
                   <small>Verified Graduate</small>
@@ -182,7 +182,7 @@
               "
             >
               <div class="flex gap-[1rem] items-center">
-                <img src="../assets/images/image-daniel.jpg" alt="daniel" />
+                <img src="../assets/images/image-patrick.jpg" alt="patrick" />
                 <div>
                   <h1>Patrick Abrams</h1>
                   <small>Verified Graduate</small>
