@@ -39,15 +39,15 @@
                   placeholder="Custom"
                   type="number"
                   name="bill"
-                  id="bill"
+                  id="custom"
                 />
               </div>
             </div>
             <div class="flex flex-col gap-[.7rem]">
               <div class="flex justify-between">
-                <label for="bill">Number of People</label>
+                <label for="people">Number of People</label>
                 <label
-                  v-if="error"
+                  v-if="error" for="error"
                   :class="error && people <= 0 ? 'error' : 'hidden'"
                   class="!outline-0"
                   >Can't be zero</label
