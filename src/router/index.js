@@ -13,13 +13,20 @@ const router = createRouter({
         title: "IP Address Tracker",
       },
     },
-
     {
       path: "/calculator",
       name: "calculator",
       component: CalculatorView,
       meta: {
         title: "Calculator",
+      },
+    },
+    {
+      path: "/grid",
+      name: "gridlayout",
+      component: () => import("@/views/GridView.vue"),
+      meta: {
+        title: "Grid",
       },
     },
     {

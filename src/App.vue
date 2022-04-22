@@ -8,6 +8,7 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/calculator">Calculator</RouterLink>
+        <RouterLink :to="{name: 'gridlayout'}">Grid</RouterLink>
       </nav>
     </div>
   </header>
