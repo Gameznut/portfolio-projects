@@ -1,109 +1,112 @@
 <template>
-  <div class="flex justify-center items-center body mobile">
-    <div>
-      <div class="flex justify-center w-full items-center h-[10rem]">
-        <img src="../assets/images/logo.svg" alt="" />
-      </div>
-      <form @click.prevent class="">
-        <div class="calculator flex gap-[2rem]">
-          <!-- inputs -->
-          <div class="flex flex-col w-full gap-[2rem]">
-            <div class="flex flex-col gap-[.7rem]">
-              <label for="bill">Bill</label>
-              <div class="relative">
-                <input
-                  @input="customs"
-                  placeholder="0"
-                  v-model="bill"
-                  type="number"
-                  id="bill"
-                  class="!pl-[2rem]"
-                />
-                <div class="absolute top-[35%] left-[1rem]">
-                  <img src="../assets/images/icon-dollar.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-[.7rem]">
-              <label for="bill">Select Tip %</label>
-              <div class="grid tips">
-                <button value="0.05" @click="tipping">5%</button>
-                <button value="0.1" @click="tipping">10%</button>
-                <button value="0.15" @click="tipping">15%</button>
-                <button value="0.25" @click="tipping">25%</button>
-                <button value="0.5" @click="tipping">50%</button>
-                <input
-                  class="w-[100%] custom"
-                  @input="customs"
-                  v-model="custom"
-                  placeholder="Custom"
-                  type="number"
-                  name="bill"
-                  id="custom"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col gap-[.7rem]">
-              <div class="flex justify-between">
-                <label for="people">Number of People</label>
-                <label
-                  v-if="error" for="error"
-                  :class="error && people <= 0 ? 'error' : 'hidden'"
-                  class="!outline-0"
-                  >Can't be zero</label
-                >
-              </div>
-              <div class="relative">
-                <input
-                  @input="customs"
-                  :class="
-                    error && people <= 0
-                      ? 'error'
-                      : 'outline-[hsl(172, 67%, 45%)]'
-                  "
-                  v-model="people"
-                  placeholder="0"
-                  type="number"
-                  id="people"
-                  class="!pl-[2rem]"
-                />
-                <div class="absolute top-[35%] left-[1rem]">
-                  <img src="../assets/images/icon-person.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- amount -->
-          <div class="flex amount flex-col w-full gap-[1rem]">
-            <div class="flex justify-between">
-              <div class="flex flex-col">
-                <label class="w-max">Tip Amount</label>
-                <label>/ person</label>
-              </div>
-              <h1 class="amountText">${{ tip.toFixed(2) }}</h1>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex flex-col">
-                <label>Total</label>
-                <label>/ person</label>
-              </div>
-              <h1 class="amountText">${{ total.toFixed(2) }}</h1>
-            </div>
-
-            <div class="flex flex-1 flex-col gap-[.7rem]">
-              <button
-                @click="reset"
-                class="absolute bottom-0 w-full uppercase"
-                type="reset"
-              >
-                Reset
-              </button>
-            </div>
-          </div>
+  <main>
+    <div class="flex justify-center items-center body mobile">
+      <div>
+        <div class="flex justify-center w-full items-center h-[10rem]">
+          <img src="../assets/images/logo.svg" alt="" />
         </div>
-      </form>
+        <form @click.prevent class="">
+          <div class="calculator flex gap-[2rem]">
+            <!-- inputs -->
+            <div class="flex flex-col w-full gap-[2rem]">
+              <div class="flex flex-col gap-[.7rem]">
+                <label for="bill">Bill</label>
+                <div class="relative">
+                  <input
+                    @input="customs"
+                    placeholder="0"
+                    v-model="bill"
+                    type="number"
+                    id="bill"
+                    class="!pl-[2rem]"
+                  />
+                  <div class="absolute top-[35%] left-[1rem]">
+                    <img src="../assets/images/icon-dollar.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-[.7rem]">
+                <label for="bill">Select Tip %</label>
+                <div class="grid tips">
+                  <button value="0.05" @click="tipping">5%</button>
+                  <button value="0.1" @click="tipping">10%</button>
+                  <button value="0.15" @click="tipping">15%</button>
+                  <button value="0.25" @click="tipping">25%</button>
+                  <button value="0.5" @click="tipping">50%</button>
+                  <input
+                    class="w-[100%] custom"
+                    @input="customs"
+                    v-model="custom"
+                    placeholder="Custom"
+                    type="number"
+                    name="bill"
+                    id="custom"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-[.7rem]">
+                <div class="flex justify-between">
+                  <label for="people">Number of People</label>
+                  <label
+                    v-if="error"
+                    for="error"
+                    :class="error && people <= 0 ? 'error' : 'hidden'"
+                    class="!outline-0"
+                    >Can't be zero</label
+                  >
+                </div>
+                <div class="relative">
+                  <input
+                    @input="customs"
+                    :class="
+                      error && people <= 0
+                        ? 'error'
+                        : 'outline-[hsl(172, 67%, 45%)]'
+                    "
+                    v-model="people"
+                    placeholder="0"
+                    type="number"
+                    id="people"
+                    class="!pl-[2rem]"
+                  />
+                  <div class="absolute top-[35%] left-[1rem]">
+                    <img src="../assets/images/icon-person.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- amount -->
+            <div class="flex amount flex-col w-full gap-[1rem]">
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <label class="w-max">Tip Amount</label>
+                  <label>/ person</label>
+                </div>
+                <h1 class="amountText">${{ tip.toFixed(2) }}</h1>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <label>Total</label>
+                  <label>/ person</label>
+                </div>
+                <h1 class="amountText">${{ total.toFixed(2) }}</h1>
+              </div>
+
+              <div class="flex flex-1 flex-col gap-[.7rem]">
+                <button
+                  @click="reset"
+                  class="absolute bottom-0 w-full uppercase"
+                  type="reset"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
