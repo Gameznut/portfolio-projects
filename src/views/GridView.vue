@@ -37,7 +37,7 @@
                 were current, if not more so, in the company I joined. I
                 honestly feel I got every penny’s worth.
               </p>
-              <h6>
+              <h3>
                 " I was an EMT for many years before I joined the bootcamp. I’ve
                 been looking to make a transition and have heard some people who
                 had an amazing experience here. I signed up for the free intro
@@ -46,7 +46,7 @@
                 time of my life. Since completing the course, I’ve successfully
                 switched careers, working as a Software Engineer at a VR
                 startup. "
-              </h6>
+              </h3>
             </div>
             <div
               class="
@@ -68,11 +68,11 @@
                 </div>
               </div>
               <p>The team was very supportive and kept me motivated</p>
-              <h6>
+              <h3>
                 " I started as a total newbie with virtually no coding skills. I
                 now work as a mobile engineer for a big company. This was one of
                 the best investments I’ve made in myself. "
-              </h6>
+              </h3>
             </div>
             <div
               class="
@@ -93,7 +93,7 @@
                 </div>
               </div>
               <p>Such a life-changing experience. Highly recommended!</p>
-              <h6>
+              <h3>
                 " Before joining the bootcamp, I’ve never written a line of
                 code. I needed some structure from professionals who can help me
                 learn programming step by step. I was encouraged to enroll by a
@@ -106,7 +106,7 @@
                 during interviews as an example of my developent experience. It
                 certainly helped me land a job as a full-stack developer after
                 receiving multiple offers. 100% recommend! "
-              </h6>
+              </h3>
             </div>
             <div
               class="
@@ -127,11 +127,11 @@
                 </div>
               </div>
               <p>An overall wonderful and rewarding experience</p>
-              <h6>
+              <h3>
                 "Thank you for the wonderful experience! I now have a job I
                 really enjoy, and make a good living while doing something I
                 love."
-              </h6>
+              </h3>
             </div>
             <!-- don't show -->
             <div
@@ -154,7 +154,7 @@
                 </div>
               </div>
               <p>Such a life-changing experience. Highly recommended!</p>
-              <h6>
+              <h3>
                 " Before joining the bootcamp, I’ve never written a line of
                 code. I needed some structure from professionals who can help me
                 learn programming step by step. I was encouraged to enroll by a
@@ -167,7 +167,7 @@
                 during interviews as an example of my developent experience. It
                 certainly helped me land a job as a full-stack developer after
                 receiving multiple offers. 100% recommend! "
-              </h6>
+              </h3>
             </div>
             <!-- don't show -->
             <div
@@ -193,14 +193,14 @@
                 themselves. Getting guidance from them and learning from their
                 experiences was easy.
               </p>
-              <h6>
+              <h3>
                 " The staff seem genuinely concerned about my progress which I
                 find really refreshing. The program gave me the confidence
                 necessary to be able to go out in the world and present myself
                 as a capable junior developer. The standard is above the rest.
                 You will get the personal attention you need from an incredible
                 community of smart and amazing people. "
-              </h6>
+              </h3>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ p {
   font-weight: 700 !important;
   color: white;
 }
-h6 {
+h3 {
   font-weight: 500 !important;
   color: hsl(0, 0%, 71%);
   /* color: #7541c8; */
