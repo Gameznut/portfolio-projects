@@ -10,7 +10,7 @@
         <RouterLink to="/calculator">Calculator</RouterLink>
         <RouterLink :to="{name: 'gridlayout'}">Grid</RouterLink>
         <RouterLink :to="{name: 'room-homepage'}">Room</RouterLink>
-        <RouterLink :to="{name: 'advice'}">Avice</RouterLink>
+        <RouterLink :to="{name: 'advice'}">Advice</RouterLink>
       </nav>
     </div>
   </header>
