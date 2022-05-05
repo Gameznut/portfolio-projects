@@ -2,8 +2,8 @@
   <div class="body">
     <div class="contain">
       <div class="contained">
-        <h1>Advice # {{ result.id }}</h1>
-        <p>
+        <h1 class="h1">Advice # {{ result.id }}</h1>
+        <p class="p">
           {{ result.advice }}
         </p>
         <div class="img">
@@ -12,7 +12,7 @@
         <div class="mobile">
           <img src="../assets/images/pattern-divider-mobile.svg" alt="" />
         </div>
-        <button @click="getAdvice">
+        <button class="button" @click="getAdvice">
           <div>
             <img src="../assets/images/icon-dice.svg" alt="" />
           </div>
@@ -38,7 +38,7 @@ const getAdvice = async () => {
 };
 </script>
 
-<style>
+<style >
 @import url('../assets/advice.css');
 
 </style>
