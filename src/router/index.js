@@ -30,6 +30,22 @@ const router = createRouter({
       },
     },
     {
+      path: "/room",
+      name: "room-homepage",
+      component: () => import("@/views/RoomView.vue"),
+      meta: {
+        title: "Room",
+      },
+    },
+    {
+      path: "/advice",
+      name: "advice",
+      component: () => import("@/views/AdviceApp.vue"),
+      meta: {
+        title: "Advice App",
+      },
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "not-found",
       component: () => import("@/views/PageNotFound.vue"),
