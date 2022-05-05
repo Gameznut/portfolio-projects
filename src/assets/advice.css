@@ -3,18 +3,87 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
 }
-:root {
-  --Light-Cyan: hsl(193, 38%, 86%);
-  --Neon-Green: hsl(150, 100%, 66%);
 
-  --Grayish-Blue: hsl(217, 19%, 38%);
-  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
-  --Dark-Blue: hsl(218, 23%, 16%);
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
 }
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
 
 .body {
     font-family: "Manrope", sans-serif;
@@ -22,20 +91,20 @@
     background-color: var(--Dark-Blue);
     height: 100vh;
     width: 100vw;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: 100%;
-  }
-  
-  .contain {
+}
+
+.contain {
     height: 100vh;
     display: flex;
     width: 100%;
-  }
-  
-  .contained {
+}
+
+.contained {
     background-color: var(--Dark-Grayish-Blue);
     max-width: 500px;
     width: 100%;
@@ -44,25 +113,25 @@
     position: relative;
     margin: auto;
     box-shadow: 1px 2px 30px 9px rgb(23, 31, 32);
-  }
-  
-  .h1 {
+}
+
+.h1 {
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 800;
     color: var(--Neon-Green);
-  }
-  
-  .p {
+}
+
+.p {
     margin: 1.3rem 0 0;
     font-weight: 800;
     color: var(--Light-Cyan);
     text-align: center;
     height: max-content;
-  }
-  
-  .button {
+}
+
+.button {
     display: flex;
     width: 60px;
     height: 60px;
@@ -79,30 +148,32 @@
     border: none;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     box-shadow: 0 0 9px 10px var(--Neon-Green);
     opacity: 1;
-  }
-  
-  .img {
+}
+
+.img {
     padding: 1.2rem 0;
-  }
-  .mobile {
+}
+
+.mobile {
     display: none;
-  }
-  
-  @media screen and (max-width: 728px) {
+}
+
+@media screen and (max-width: 728px) {
     .contain {
-      padding: 1rem;
+        padding: 1rem;
     }
+
     .mobile {
-      display: block;
-      padding: 2rem 0;
+        display: block;
+        padding: 2rem 0;
     }
-  
+
     .img {
-      display: none;
+        display: none;
     }
-  }
+}

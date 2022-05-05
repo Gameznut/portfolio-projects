@@ -2,10 +2,16 @@
   <div class="body">
     <div class="contain">
       <div class="contained">
-        <h1 class="h1">Advice # {{ result.id }}</h1>
-        <p class="p">
-          {{ result.advice }}
-        </p>
+        <div v-if="result">
+          <h1 class="h1">Advice # {{ result.id }}</h1>
+          <p class="p">
+            {{ result.advice }}
+          </p>
+        </div>
+        <div v-else class="grid place-items-center">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+
         <div class="img">
           <img src="../assets/images/pattern-divider-desktop.svg" alt="" />
         </div>
@@ -39,6 +45,5 @@ const getAdvice = async () => {
 </script>
 
 <style >
-@import url('../assets/advice.css');
-
+@import url("../assets/advice.css");
 </style>
