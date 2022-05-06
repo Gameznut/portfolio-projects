@@ -44,6 +44,6 @@ const getAdvice = async () => {
 };
 </script>
 
-<style >
+<style scoped>
 @import url("../assets/advice.css");
 </style>

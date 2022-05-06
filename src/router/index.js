@@ -46,6 +46,14 @@ const router = createRouter({
       },
     },
     {
+      path: "/gridprice",
+      name: "gridprice",
+      component: () => import("@/views/GridPrice.vue"),
+      meta: {
+        title: "Advice App",
+      },
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "not-found",
       component: () => import("@/views/PageNotFound.vue"),

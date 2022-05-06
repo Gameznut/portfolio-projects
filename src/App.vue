@@ -11,6 +11,7 @@
         <RouterLink :to="{name: 'gridlayout'}">Grid</RouterLink>
         <RouterLink :to="{name: 'room-homepage'}">Room</RouterLink>
         <RouterLink :to="{name: 'advice'}">Advice</RouterLink>
+        <RouterLink :to="{name: 'gridprice'}">Price</RouterLink>
       </nav>
     </div>
   </header>
@@ -18,16 +19,10 @@
   <RouterView />
 </template>
 
-<style>
+<style scoped>
 @import "@/assets/base.css";
 
-#app {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  /* padding: 2rem; */
 
-  font-weight: normal;
-}
 
 .wrapper {
   line-height: 1.5;
