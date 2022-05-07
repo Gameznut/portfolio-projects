@@ -160,7 +160,7 @@ color: #000;
   width: 100%;
   height: 100%;
   font-size: 50px !important;
-  padding: 1rem 1.7rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   background-color: #fff;
   border-radius: 0.62rem;
   color: #181818;
