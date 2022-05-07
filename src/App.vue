@@ -12,6 +12,7 @@
         <RouterLink :to="{name: 'room-homepage'}">Room</RouterLink>
         <RouterLink :to="{name: 'advice'}">Advice</RouterLink>
         <RouterLink :to="{name: 'gridprice'}">Price</RouterLink>
+        <RouterLink :to="{name: 'connectify'}">Connectify</RouterLink>
       </nav>
     </div>
   </header>

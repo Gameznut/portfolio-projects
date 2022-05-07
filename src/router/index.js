@@ -50,7 +50,15 @@ const router = createRouter({
       name: "gridprice",
       component: () => import("@/views/GridPrice.vue"),
       meta: {
-        title: "Advice App",
+        title: "Small Grid Price",
+      },
+    },
+    {
+      path: "/connectify",
+      name: "connectify",
+      component: () => import("@/views/Connectify.vue"),
+      meta: {
+        title: "Connectify",
       },
     },
     {
