@@ -1,7 +1,7 @@
 <template>
   <main class="">
     <section class="contain body">
-      <div class="contained">
+      <div class="contained my-[4rem]">
         <div class="top">
           <h1>Join our community</h1>
           <h2>30-day, hassle-free money back guarantee</h2>
@@ -48,6 +48,7 @@
   font-family: "Karla", sans-serif;
   font-size: 16px !important;
   background-color: hsl(204, 43%, 93%);
+  padding: 4rem;
 }
 ul {
   list-style: none;
@@ -176,5 +177,9 @@ ul {
     line-height: 1.5rem;
     font-size: 14px;
   }
+  .contain {
+
+  padding: 9rem  1rem 0;
+}
 }
 </style>
