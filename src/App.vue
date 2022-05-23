@@ -13,6 +13,7 @@
         <RouterLink :to="{name: 'advice'}">Advice</RouterLink>
         <RouterLink :to="{name: 'gridprice'}">Price</RouterLink>
         <RouterLink :to="{name: 'connectify'}">Connectify</RouterLink>
+        <RouterLink :to="{name: 'fintory'}">Fintory</RouterLink>
       </nav>
     </div>
   </header>

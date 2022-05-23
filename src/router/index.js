@@ -62,6 +62,14 @@ const router = createRouter({
       },
     },
     {
+      path: "/fintory",
+      name: "fintory",
+      component: () => import("@/views/Fintory.vue"),
+      meta: {
+        title: "Fintory",
+      },
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "not-found",
       component: () => import("@/views/PageNotFound.vue"),
